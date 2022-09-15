@@ -3,6 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+.section_accordion{
+    background: #f6f6f6;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.Accordion{
+    padding: 20px;
+    background: #fff;
+}
+.text_title_accordion{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
 .sticky_logo{
     position: fixed;
     top: 0;
@@ -88,6 +102,10 @@ body{
 }
 .mw_1920{
     max-width: 1920px;
+    width: 100%;
+}
+.mw_1170{
+    max-width: 1170px;
     width: 100%;
 }
 .mw_1742{
@@ -225,7 +243,7 @@ body{
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-    margin-left: 10px;
+    margin-left: 2px;
 }
 .t4s_open_store{
     color: #010101;
@@ -1133,10 +1151,12 @@ margin-top: 22px;
     margin-bottom: unset;
 }
 .t4s_item_sp_img >img{
+    height: 100%;
+    object-fit: contain;
     width: 100%;
 }
 .t4s_item_sp_img{
-    height: 100%;
+    height: 300px;
 }
 .t4s_dis_sp_img{
     margin-bottom: unset;
@@ -1754,7 +1774,7 @@ flex: 1 0 0%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     padding-right: 28px;
     padding-top: 17px;
     padding-bottom: 20px;
@@ -2203,6 +2223,9 @@ span.original-price {
     }
 }
 @media screen and (min-width: 576px){
+    .t4s_item_sp_img{
+        height: 200px;
+    }
     .t4s_img_position_EC{
         width: 38%;
         padding: 11px 12px;
@@ -2316,9 +2339,6 @@ span.original-price {
         justify-content: unset;
         
     }
-    .offer-sale{
-        display: block;
-    }
     .t4s_btn_img_banner >div{
         margin-top: unset;
     }
@@ -2347,8 +2367,12 @@ span.original-price {
     .t4s_btn_purcher a{
         padding: 11px 56px;
     }
+    
 }
 @media screen and (min-width: 768px){
+    .t4s_item_sp_img{
+        height: 300px;
+    }
     .t4s_banner_img .t4s_position_4{
         display: block;
         max-width: 350px;
@@ -2516,6 +2540,7 @@ span.original-price {
     }
 }
 @media screen and (min-width: 992px){
+   
     .t4s_item_review_wrap .flickity-page-dots{
         bottom: -55px;
     }
@@ -2737,6 +2762,9 @@ span.original-price {
 
 }
 @media screen and (min-width: 1400px){
+    .t4s_item_sp_img{
+        height: 350px;
+    }
     .t4s_img_position_computer{
        width: 100%;
     }
