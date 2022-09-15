@@ -12,6 +12,12 @@
     padding: 20px;
     background: #fff;
 }
+.title_accordion{
+    display: flex;
+}
+.icon_title_accordion{
+    fill: #ff890c;
+}
 .text_title_accordion{
     font-size: 20px;
     font-weight: 600;
