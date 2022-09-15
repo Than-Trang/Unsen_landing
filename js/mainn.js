@@ -111,5 +111,27 @@ $(window).resize(function () {
       $(".logo").removeClass('sticky_logo');
     }
   });
+
+  // Accordion
+  $('.t4s_Accordion').off('click').on( "click", function(e) {  
+    // e.preventDefault();
+
+    $(this).find('.t4s_content_accordion_wrap').slideToggle(300).toggleClass("t4s_hidden_t4s_content_accordion_wrap");
+    $(this).find('.t4s_icon_minus').toggleClass('t4s_hidden_icon');
+    $(this).find('.t4s_icon_plus').toggleClass('t4s_hidden_icon');
+    $(this).siblings().find('.t4s_content_accordion_wrap').slideUp(300).removeClass('t4s_hidden_t4s_content_accordion_wrap');
+    $(this).siblings().find('.t4s_icon_minus').addClass('t4s_hidden_icon');
+    $(this).siblings().find('.t4s_icon_plus').removeClass('t4s_hidden_icon');
+
+    // console.log(  $(this));
+    // $(this).find('.t4s_content_accordion_wrap').slideToggle(300)
+    // $(this).find('.t4s_icon_minus').toggleClass('t4s_hidden_icon');
+    // $(this).find('.t4s_icon_plus').toggleClass('t4s_hidden_icon');
+
+  });
+
+
+
 });
+
 $(window).resize();

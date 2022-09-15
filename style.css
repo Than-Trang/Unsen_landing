@@ -3,25 +3,92 @@
     padding: 0;
     box-sizing: border-box;
 }
-.section_accordion{
+.t4s_section_accordion{
     background: #f6f6f6;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.Accordion{
+.t4s_Accordion{
     padding: 20px;
+    margin-top: 20px;
     background: #fff;
 }
-.title_accordion{
+.t4s_accordion_container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.t4s_title_accordion_wrap{
+    
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.t4s_title_accordion_wrap:hover .t4s_text_title_accordion,.t4s_title_accordion_wrap:hover .t4s_icon_minus,
+.t4s_title_accordion_wrap:hover .t4s_icon_plus
+{
+    color:#0ec0ad;
+    fill: #0ec0ad;
+    transition: 0.3s;
+}
+.t4s_icon_minus, .t4s_icon_plus{
+    position: absolute;
+    right: 0px;
+}
+.t4s_content_accordion_wrap{
+    display: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 20px;
+    margin-top: 24px;
+}
+.t4s_hidden_t4s_content_accordion_wrap{
+    display: block;
+}
+.t4s_content_accordion > p{
+    color: #868686;
+    font-size: 14px;
+    line-height: 2em;
+    font-weight: 400;
+    margin-bottom: 30px;
+   
+}
+.t4s_icon_accordion{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.t4s_content_accordion > p:last-child{
+    margin-bottom: unset;
+}
+.t4s_content_accordion{
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    padding: 20px;
+}
+.t4s_icon_title_accordion{
+    fill: #ff890c;
+    min-width: 27px;
+    min-height: 27px;
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+}
+.t4s_Accordion_wrap{
+    margin-top: 60px;
+}
+.t4s_title_accordion{
     display: flex;
 }
-.icon_title_accordion{
-    fill: #ff890c;
-}
-.text_title_accordion{
-    font-size: 20px;
+.t4s_text_title_accordion{
+    font-size: 15px;
     font-weight: 600;
     line-height: 1.3em;
+    margin-bottom: unset;
+}
+.t4s_hidden_icon{
+    opacity: 0;
+    width: 0;
+    transition: 0.5s;
 }
 .sticky_logo{
     position: fixed;
@@ -1055,6 +1122,9 @@ margin-top: 22px;
 }
 .t4s_btn_new_letter:hover{
     background-color: #0dc1acc8;
+}
+.t4s_text_title_accordion {
+    padding-right: 50px;
 }
 .t4s_btn_new_letter svg, .btn_discount svg{
     width: 17px;
@@ -2229,6 +2299,10 @@ span.original-price {
     }
 }
 @media screen and (min-width: 576px){
+    .t4s_accordion_container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .t4s_item_sp_img{
         height: 200px;
     }
@@ -2544,9 +2618,15 @@ span.original-price {
     .t4s_img_usen_and_the4 >img{
         height: 250px;
     }
+    .t4s_text_title_accordion{
+        font-size: 18px;
+    }
 }
 @media screen and (min-width: 992px){
-   
+    .t4s_accordion_container{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
     .t4s_item_review_wrap .flickity-page-dots{
         bottom: -55px;
     }
@@ -2698,6 +2778,10 @@ span.original-price {
 }
 @media screen and (min-width:1200px)
 {
+    .t4s_text_title_accordion{
+    font-size: 20px;
+
+}
     .t4s_img_usen_and_the4 >img{
         height: 330px;
     }
