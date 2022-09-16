@@ -254,9 +254,6 @@ body{
 }
 @keyframes marquee_flex_wrap {
     0% { left: 0; }
-    20%{
-        
-    }
     100% { left: -100%; }
   }
 .marquee_flex{
@@ -643,7 +640,7 @@ ul{
 }   
 .t4s_counter{
    background: #fff;
-   box-shadow: 0 3px 10px rgb(215, 215, 215);
+   box-shadow: 0 3px 16px rgb(226 226 226);
    padding: 30px 0 50px;
    border-radius: 5px;
    position: relative;
@@ -933,34 +930,36 @@ ul{
     
     
 }
+.t4s_content_5{
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+.t4s_bg_title_content_5_flex_wrap{
+    position: relative;
+   
+}
 @keyframes marquee_flex_wrap2 {
-    0% { left: 100%; }
+    0% { left: 0%; }
     100% { left: -100%; }
   }
-.t4s_text_img_content5 .t4s_text_prebuilt_demo::before{
-   content: 'One-time charge';
-   position: absolute;
-   top: 50%;
-   left: 0%;
+.t4s_bg_title_content_5_flex{
+    display: flex;
+    width: 300%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    animation: marquee_flex_wrap2 15s linear infinite;
+    line-height: 1.2;
+    top: 50%;
     transform: translateY(-50%);
-    display: none;
+}
+.t4s_bg_title_content_5{
     width: 100%;
     color: transparent;
     -webkit-text-stroke: 1px #e5e5e5;
-    animation: marquee_flex_wrap2 15s linear infinite;
+    font-size: 35px;
 }
-/* .t4s_text_img_content5 .t4s_text_prebuilt_demo::after{
-    content: 'One-time charge';
-    position: absolute;
-    top: 50%;
-    right: 100%;
-     transform: translateY(-50%);
-     font-size: 185px ;
-     width: 100%;
-     color: transparent;
-     -webkit-text-stroke: 1px #c63838;
-     animation: marquee_flex_wrap2 15s linear infinite;
- } */
+
 .t4s_ds_home_main_item{
     margin-top: 30px;
 }
@@ -977,7 +976,7 @@ ul{
     padding: 10px;
 }
 .t4s_img_home_main_slide,.t4s_img_home_main_slide1{
-   max-height: 330px;
+   height: 262px;
     border-radius: 3px;
     background-color: #fff;
     padding: 10px;
@@ -1272,7 +1271,6 @@ margin-top: 22px;
     font-weight: 400;
     font-family: "Poppins";
     text-align: center;
-   margin-bottom: 15px;
 }
 
 .t4s_item_sp{
@@ -1318,6 +1316,11 @@ margin-top: 22px;
 .t4s_slide_wrap .t4s_slide{
     position: absolute; 
     opacity: 0;
+    left: 0;
+    right: 0;
+   
+    z-index: -1;
+    width: 100%;
 }
 .t4s_btn_slide{
     font-size: 14px;
@@ -1352,12 +1355,19 @@ margin-top: 22px;
     z-index: 5;
    
 }
+.t4s_wrap_btnn_table{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
 .t4s_text_prebuilt_demo1{
     z-index: 5;
 }
 .t4s_text_prebuilt_demo{
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 5;
     flex-direction: column;
     align-items: center;
 }
@@ -1560,11 +1570,13 @@ tr:first-child,.t4s_table_row {
 #load:hover{
     background: #0ec0aec8;
 }
-.btn_loadmore{
-    left: 50%;
-    bottom: 0px;
-    transform: translateX(-50%);
-    z-index: 9;
+.t4s_dis_sp_img_big{
+    max-width: 538px;
+    width: 100%;
+    margin: 0 auto;
+}
+.t4s_dis_sp_img_small{
+    margin: 0 auto;
 }
 .t4s_content_6_app_partner{
     --bs-gutter-x: 50px;
@@ -2296,6 +2308,7 @@ span.original-price {
     width: 100%;
    padding-left: 10px;
    padding-right: 10px;
+   margin-bottom: unset;
     position: relative;
    
 }
@@ -2331,6 +2344,9 @@ span.original-price {
     }
 }
 @media screen and (min-width: 576px){
+    .t4s_bg_title_content_5{
+        font-size: 55px;
+    }
     .t4s_accordion_container{
         padding-left: 30px;
         padding-right: 30px;
@@ -2626,7 +2642,7 @@ span.original-price {
     .t4s_text_content5{
         padding: 50px;
     }
-    .t4s_text_img_content5 .t4s_text_prebuilt_demo::before{
+    .t4s_bg_title_content_5{
         display: block;
         font-size: 80px;
     }
@@ -2794,7 +2810,7 @@ span.original-price {
     .btn_loadmore{
         bottom: -10px;
     }
-    .t4s_text_img_content5 .t4s_text_prebuilt_demo::before{
+    .t4s_bg_title_content_5{
         font-size: 100px;
     }
     .t4s_table_content5{
@@ -2822,7 +2838,7 @@ span.original-price {
         height: 330px;
     }
     .t4s_title_usen_and_the4{
-        margin-top: 30px;
+        margin-top: 15px;
     }
     .t4s_img_position_EC{
         left: -17%;
@@ -2876,7 +2892,7 @@ span.original-price {
     .t4s_prebuilt_demo{
         --bs-gutter-x: 50px;
     }
-    .t4s_text_img_content5 .t4s_text_prebuilt_demo::before{
+    .t4s_bg_title_content_5{
         font-size: 120px;
     }
     .tab_title{
@@ -2898,7 +2914,7 @@ span.original-price {
     .menu{
         justify-content: center;
     }
-    .t4s_text_img_content5 .t4s_text_prebuilt_demo::before{
+    .t4s_bg_title_content_5{
         font-size: 130px;
     }
 }
@@ -2906,8 +2922,8 @@ span.original-price {
     .t4s_banner_img .t4s_position_4{
         max-width: 450px;
     }
-    .t4s_text_img_content5 .t4s_text_prebuilt_demo::before{
-        font-size: 185px;
+    .t4s_bg_title_content_5{
+        font-size: 180px;
     }
 }
 table .tb-show{
@@ -2922,7 +2938,8 @@ table .tb-show{
     z-index: -1;
 }
 .t4s_slide_wrap .tb-show{
-    opacity: 2;
+    opacity: 1;
     transition: 0.3s linear;
     position: relative;
+    z-index: 1;
 }
